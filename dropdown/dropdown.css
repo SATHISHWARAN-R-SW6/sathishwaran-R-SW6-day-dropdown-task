@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.dropdown {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 100px;
+}
+a {
+  display: block;
+  width: 200px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 32px;
+  text-align: center;
+}
+a:hover {
+  background-color: dodgerblue;
+}
+.product {
+  list-style-type: none;
+  display: none;
+}
+.dropdown li:nth-child(2):hover .product {
+  display: block;
+}
+.book {
+  list-style-type: none;
+  transform: translate(200px) translateY(-56.8px);
+  position: absolute;
+  display: none;
+}
+.product li:nth-child(3):hover .book {
+  display: block;
+}
